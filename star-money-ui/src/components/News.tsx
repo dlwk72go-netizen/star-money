@@ -20,6 +20,16 @@ const News = () => {
 
                 <Card bordered={false} style={{ borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}>
                     {/* 헤더 섹션 */}
+                    <div style={{ marginBottom: '32px', textAlign: 'center' }}>
+                        {["한게임머니상", "윈조이머니상", "포커환전", "슬롯머니", "모바일머니시세", "안전거래"].map(tag => (
+                            <Tag color="geekblue" key={tag} style={{ padding: '4px 12px', borderRadius: '15px' }}># {tag}</Tag>
+                        ))}
+                    </div>
+                    <div style={{ marginBottom: '32px', textAlign: 'center' }}>
+                        {["한게임머니상", "윈조이머니상", "포커환전", "슬롯머니", "모바일머니시세", "안전거래"].map(tag => (
+                            <Tag color="geekblue" key={tag} style={{ padding: '4px 12px', borderRadius: '15px' }}># {tag}</Tag>
+                        ))}
+                    </div>
                     <div style={{ textAlign: 'center', marginBottom: '32px' }}>
                         <Text type="secondary" strong>Notice</Text>
                         <Divider style={{ margin: '12px 0' }} />
@@ -38,6 +48,19 @@ const News = () => {
                     </div>
 
                     <Divider />
+                    <div
+                        style={{
+                            display: 'flex',
+                            width: '100%',
+                            marginBottom: '32px',
+                            gap: 16,
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                        }}
+                    >
+                        <img src="/images/star-money-3.png" alt="스타머니3" />
+                    </div>
+
 
                     {/* 본문 섹션 */}
                     <Typography style={{ fontSize: '16px', lineHeight: '1.8' }}>
@@ -91,6 +114,7 @@ const News = () => {
                     </div>
                 </Card>
             </Content>
+
         </Layout>
     );
 };
