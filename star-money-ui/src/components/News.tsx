@@ -6,7 +6,7 @@ const { Content } = Layout;
 const { Title, Paragraph, Text } = Typography;
 
 const News = () => {
-    const phoneNumber = "010-9685-8245";
+    const phoneNumber = "[010-9685-8245] 한게임 스타머니";
 
     return (
         <Layout style={{ minHeight: '100vh', backgroundColor: '#f0f2f5', padding: '24px' }}>
@@ -21,12 +21,12 @@ const News = () => {
                 <Card bordered={false} style={{ borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}>
                     {/* 헤더 섹션 */}
                     <div style={{ marginBottom: '32px', textAlign: 'center' }}>
-                        {["한게임머니상", "윈조이머니상", "포커환전", "슬롯머니", "모바일머니시세", "안전거래"].map(tag => (
+                        {["한게임 스타머니", "한게임 포인트", "포커환전", "한게임 시작하기", "한게임 모바일 ", "안전거래"].map(tag => (
                             <Tag color="geekblue" key={tag} style={{ padding: '4px 12px', borderRadius: '15px' }}># {tag}</Tag>
                         ))}
                     </div>
                     <div style={{ marginBottom: '32px', textAlign: 'center' }}>
-                        {["한게임머니상", "윈조이머니상", "포커환전", "슬롯머니", "모바일머니시세", "안전거래"].map(tag => (
+                        {["한게임 스타머니", "한게임 포인트", "환게임 모바일", "한게임 교환", "한게임 매입", "안전거래"].map(tag => (
                             <Tag color="geekblue" key={tag} style={{ padding: '4px 12px', borderRadius: '15px' }}># {tag}</Tag>
                         ))}
                     </div>
@@ -42,7 +42,7 @@ const News = () => {
 
                     {/* 태그 클라우드 섹션 */}
                     <div style={{ marginBottom: '32px', textAlign: 'center' }}>
-                        {["한게임머니상", "윈조이머니상", "포커환전", "슬롯머니", "모바일머니시세", "안전거래"].map(tag => (
+                        {["한게임 스타머니", "한게임 포인트", "환게임 모바일", "한게임 교환", "한게임 매입", "안전거래"].map(tag => (
                             <Tag color="geekblue" key={tag} style={{ padding: '4px 12px', borderRadius: '15px' }}># {tag}</Tag>
                         ))}
                     </div>
