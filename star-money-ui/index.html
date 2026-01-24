@@ -1,36 +1,63 @@
 <!doctype html>
-<html lang="en">
-
+<html lang="ko">
 <head>
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-NBFLFXLK');</script>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NBFLFXLK');
+  </script>
+  <!-- End Google Tag Manager -->
 
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>한게임 스타머니</title>
 
-  <meta name="description" content="한게임머니 시세 정보, 거래 시 유의사항, 안전한 이용 가이드를 제공합니다." />
+  <!-- 🔴 제목은 고정 -->
+  <title>한게임머니</title>
 
+  <!-- 🔹 검색 결과용 서브 타이틀 -->
+  <meta name="description"
+    content="한게임머니 시세 확인, 한게임 머니 거래 방법, 포커·훌라 스타머니 안전거래 가이드" />
+
+  <!-- 🔹 SEO 기본 -->
   <meta name="robots" content="index, follow" />
-  <meta name="keywords"
-    content="한게임머니, 시세, 거래, 안전한 이용, 가이드, 스타머니, 한게임 스타머니, 한게임 머니, 한게임, 한게임 포커, 훌라, 한게임 포커 머니, 한게임 환전" />
-  <meta name="author" content="한게임머니 팀" />
+  <meta name="author" content="한게임머니" />
   <meta name="theme-color" content="#ffffff" />
+
+  <!-- 🔹 키워드 (중복 제거 완료) -->
+  <meta name="keywords"
+    content="한게임머니, 한게임 머니, 한게임 머니상, 한게임 스타머니, 한게임 포커 머니, 시세, 거래, 환전, 안전거래, 훌라" />
+
+  <!-- 🔹 구조화 데이터 (검색 확장용) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "한게임머니",
+    "url": "https://star-money.site",
+    "description": "한게임머니 시세, 한게임 머니 거래, 포커·훌라 스타머니 안전거래 가이드"
+  }
+  </script>
+
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
 </head>
 
 <body>
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBFLFXLK" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBFLFXLK"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager -->
 
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
 </body>
-
 </html>
